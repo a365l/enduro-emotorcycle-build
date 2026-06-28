@@ -25,7 +25,7 @@ Phase 0 was the first full iteration of the build — sourcing every component, 
 | Brakes | Shimano MT501 hydraulic |
 | Display | UKC1 screen |
 | Grips | ProTaper |
-| Controller | Generic 72V sine wave controller |
+| Controller | Generic 72V sine wave — **80A** (battery rated 100A but limited by controller) |
 
 ---
 
@@ -188,6 +188,7 @@ First ride out — helmets on, hit the street.
 
 ## Lessons & Notes
 
+- The generic controller was rated 80A — the NBPower pack is 100A but was bottlenecked the entire phase. The battery was never the weak link, the controller was
 - Budget hub motor gets the job done for a proof of concept but dropout spacing needs verifying before ordering — always measure
 - The ceiling ratchet strap rig is genuinely useful and became a recurring fixture across phases
 - 750 lb/in rear coil is very stiff for this chassis — worth addressing in later phases
