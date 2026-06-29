@@ -1,54 +1,54 @@
-# Braking Distance Calculation
+# Braking
 
 ## Inputs
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
-| Total mass (bike + rider) | [X] kg | Weigh on scales |
-| Entry speed | 30 mph = 13.4 m/s | |
-| Entry speed | 50 mph = 22.4 m/s | |
-| Braking deceleration | [X] m/s² | Measure or estimate |
-| Coefficient of friction (μ) | ~0.8 (off-road trail) | Estimate |
+| Total mass (bike + rider) | [X] kg | Weigh it |
+| Entry speed 1 | 30 mph = 13.4 m/s | |
+| Entry speed 2 | 50 mph = 22.4 m/s | |
+| Measured deceleration | [X] m/s2 | From test below |
+| mu (off-road) | ~0.8 | Estimate |
 
 ---
 
-## Theoretical Maximum Deceleration
+## Theoretical max deceleration
 
 ```
-a_max = μ × g = 0.8 × 9.81 = 7.85 m/s²
+a_max = mu * g = 0.8 * 9.81 = 7.85 m/s2
 ```
 
-> This is the tyre-limited maximum — actual braking depends on brake force and weight transfer.
+Tyre-limited max - actual braking depends on brake force and weight transfer.
 
-## Stopping Distance Formula
+## Stopping distances
 
 ```
-s = v² / (2 × a)
+s = v^2 / (2 * a)
 ```
 
-| Entry Speed | a = 7.85 m/s² (theoretical) | a = [measured] m/s² |
-|-------------|-----------------------------|-----------------------|
-| 30 mph (13.4 m/s) | [X] m | [X] m |
-| 50 mph (22.4 m/s) | [X] m | [X] m |
+| Entry speed | a = 7.85 m/s2 (theoretical) | a = [measured] |
+|-------------|------------------------------|----------------|
+| 30 mph | [X] m | [X] m |
+| 50 mph | [X] m | [X] m |
 
 ---
 
-## Measured Braking Test
+## Braking test
 
-Method: mark start point, brake hard from known speed, measure distance to stop.
+Mark a start point. Brake hard from a known speed. Measure stopping distance.
 
-| Run | Entry speed (mph) | Stopping distance (m) | Deceleration (m/s²) | Date |
-|-----|-------------------|----------------------|---------------------|------|
+| Run | Entry (mph) | Distance (m) | Decel (m/s2) | Date |
+|-----|-------------|--------------|--------------|------|
 | 1 | | | | |
 | 2 | | | | |
 
 ---
 
-## Brake System
+## Brake setup
 
 | Component | Spec |
 |-----------|------|
-| Front brake | [Type, rotor size] |
-| Rear brake | [Type, rotor size] |
-| Brake fluid | Shimano mineral oil (MT501 bleed — Phase 2) |
+| Front | [Type, rotor size] |
+| Rear | [Type, rotor size] |
+| Fluid | Shimano mineral oil (MT501 bleed done Phase 2) |
 | Condition after bleed | [Note] |

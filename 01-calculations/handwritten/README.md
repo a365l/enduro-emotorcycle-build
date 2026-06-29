@@ -1,14 +1,10 @@
-# Handwritten Calculations
+# Handwritten calcs
 
-Scans of handwritten working go here.
+Scans go here.
 
-## Naming Convention
+## Name format
 
-`YYYY-MM-DD_[topic].jpg`
-
-Examples:
-- `2025-06-01_power-torque-rough.jpg`
-- `2025-06-15_wiring-gauge-working.jpg`
+`YYYY-MM-DD_topic.jpg`  e.g. `2025-06-01_power-torque-rough.jpg`
 
 ## Index
 

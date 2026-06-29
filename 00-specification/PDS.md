@@ -1,59 +1,57 @@
-# Product Design Specification — Enduro E-Motorcycle
+# Product Design Spec - Enduro E-Motorcycle
 
-## Project Overview
-
-Full DIY enduro electric motorcycle build. Starting from donor ICE enduro frames, replacing drivetrain with hub motor, lithium battery, and programmable sine-wave controller. Target: rideable off-road electric enduro capable of trail use.
+Full DIY electric enduro conversion - donor ICE enduro frames with hub motor, lithium pack and Fardriver controller. Goal is a properly rideable trail bike, not just a proof of concept.
 
 ---
 
-## Performance Requirements
+## Performance targets
 
-| ID | Requirement | Target | Measured | Status |
-|----|-------------|--------|----------|--------|
-| P-001 | Top speed (flat) | > [X] mph | | ☐ |
-| P-002 | Range (trail riding) | > [X] km | | ☐ |
-| P-003 | 0–30 mph time | < [X] s | | ☐ |
-| P-004 | Climbable gradient | > [X]° | | ☐ |
-| P-005 | Kerb weight (ready to ride) | < [X] kg | | ☐ |
+| ID | Requirement | Target | Measured | Done |
+|----|-------------|--------|----------|------|
+| P-001 | Top speed (flat) | > [X] mph | | [ ] |
+| P-002 | Range (trail) | > [X] km | | [ ] |
+| P-003 | 0-30 mph | < [X] s | | [ ] |
+| P-004 | Max gradient | > [X] deg | | [ ] |
+| P-005 | Kerb weight | < [X] kg | | [ ] |
 
 ---
 
-## Electrical Requirements
+## Electrical
 
 | ID | Requirement | Target | Status |
 |----|-------------|--------|--------|
-| E-001 | Bus voltage | 72V nominal | ✓ |
-| E-002 | Peak current (controller) | 450A | ✓ (Fardriver ND72450) |
-| E-003 | Continuous current | 200A | ✓ |
-| E-004 | Battery capacity | ≥ 2kWh | ✓ (2.16kWh) |
-| E-005 | Battery max discharge rate | ≥ 100A | ✓ (NBPower 100A) |
-| E-006 | Wiring: all connections serviceable without soldering | Crimped terminals | ✓ (Phase 2) |
+| E-001 | Bus voltage | 72V | done |
+| E-002 | Peak current | 450A | done - Fardriver ND72450 |
+| E-003 | Continuous current | 200A | done |
+| E-004 | Battery capacity | >= 2kWh | done - 2.16kWh |
+| E-005 | Battery discharge rate | >= 100A | done - NBPower rated 100A |
+| E-006 | All connections reworkable without soldering | Crimped | done from Phase 2 |
 
 ---
 
-## Safety Requirements
+## Safety
 
 | ID | Requirement | Status |
 |----|-------------|--------|
-| S-001 | Battery pack fused | ☐ |
-| S-002 | Phase wire insulation rated for voltage | ☐ |
-| S-003 | Controller thermally protected | ✓ (Fardriver onboard temp protection) |
-| S-004 | Braking system functional before any powered test | ✓ |
-| S-005 | No exposed HV terminals | ☐ |
+| S-001 | Battery fused | [ ] |
+| S-002 | Phase wire insulation rated for voltage | [ ] |
+| S-003 | Controller has thermal protection | done - Fardriver has onboard cutout |
+| S-004 | Brakes working before any powered run | done |
+| S-005 | No exposed HV terminals | [ ] |
 
 ---
 
 ## Constraints
 
-- Budget: [£X total across phases]
+- Budget: [£X total]
 - Must use existing donor frame
-- Must be transportable in [vehicle type]
-- Off-road use only (no road legal requirement)
+- Has to fit in [vehicle]
+- Off-road only
 
 ---
 
-## Out of Scope
+## Not doing (this build)
 
-- Road registration / type approval
-- ABS braking
-- Regenerative braking (Fardriver capable but not configured this phase)
+- Road registration
+- ABS
+- Regen braking (Fardriver supports it, just not configured yet)

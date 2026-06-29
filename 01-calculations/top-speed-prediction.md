@@ -1,69 +1,67 @@
-# Top Speed Prediction
+# Top speed prediction
 
 ## Inputs
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
-| Motor KV | [X] RPM/V | QS205 datasheet / measure |
+| Motor KV | [X] RPM/V | QS205 datasheet - fill this in |
 | Battery voltage (nominal) | 72 V | NBPower |
 | Battery voltage (full charge) | [X] V | Measure |
-| Tyre size | 19" × 80/100 | Phase 2 fitment |
-| Tyre OD (estimated) | [X] mm | Measure inflated |
-| Drive reduction | 1:1 (hub motor) | |
+| Tyre | 19" x 80/100 | Phase 2 |
+| Tyre OD (estimate) | ~643 mm | Calculated below - measure the real thing |
+| Drive ratio | 1:1 (hub motor) | |
 
 ---
 
-## Predicted No-Load RPM
+## Tyre geometry
 
 ```
-N_no_load = KV × V_nominal
-N_no_load = [KV] × 72 = [X] RPM
+19" rim = 19 * 25.4 = 482.6 mm diameter
+80/100 tyre: section height = 80% * 100 mm = 80 mm
+Tyre OD = 482.6 + 2*80 = ~643 mm
+Circumference = pi * 643 = ~2,019 mm = 2.019 m
 ```
 
-## Wheel Circumference
+Measure the inflated tyre OD and update this.
+
+## No-load RPM at 72V
 
 ```
-19" rim → rim diameter = 19 × 25.4 = 482.6 mm
-Tyre OD (80/100-19): section height = 80% × 100mm = 80mm
-Tyre OD = 482.6 + 2 × 80 = ~643 mm
-Circumference = π × 643 = ~2,019 mm = 2.019 m
+N = KV * V = [KV] * 72 = [X] RPM
 ```
 
-> Measure actual inflated tyre OD and update above.
-
-## Predicted Top Speed (no-load)
+## Predicted top speed (no-load)
 
 ```
-v = N × C / 60
-v = [N_no_load] × 2.019 / 60 = [X] m/s = [X] mph
+v = N * C / 60
+v = [N] * 2.019 / 60 = [X] m/s = [X] mph
 ```
 
-> Real top speed will be lower — motor slips under load, and aerodynamic drag limits speed.
+This is the theoretical max - real top speed will be lower because of motor slip under load and aero drag.
 
-## Drag-Limited Top Speed
+## Drag-limited top speed
 
-At top speed, drive force = drag force.
+At true top speed, drive force = drag:
 
 ```
-F_drag = 0.5 × ρ × Cd × A × v²
+F_drag = 0.5 * rho * Cd * A * v^2
 ```
 
 | Parameter | Value |
 |-----------|-------|
-| Air density ρ | 1.225 kg/m³ |
-| Drag coefficient Cd | ~0.8 (upright motorbike + rider) |
-| Frontal area A | ~0.7 m² (estimate) |
-| Drive force at top speed | [X] N |
+| Air density | 1.225 kg/m3 |
+| Cd (upright rider) | ~0.8 |
+| Frontal area A | ~0.7 m2 |
 
-> Solve for v where F_drive = F_drag. Fill in once F_drive at speed is known from motor curve.
+Solve for v where F_drive = F_drag once you have the motor torque curve.
 
 ---
 
-## Measured Top Speed
+## Measured top speed
 
-| Run | Condition | GPS speed (mph) | Date |
-|-----|-----------|----------------|------|
+| Run | Surface | GPS max (mph) | Date |
+|-----|---------|---------------|------|
 | 1 | | | |
 | 2 | | | |
 
-> Use a GPS app (e.g. Racechrono, Harry's LapTimer, or phone GPS) to log actual top speed.
+Racechrono or Harry's LapTimer works fine for this.

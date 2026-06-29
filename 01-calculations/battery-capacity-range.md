@@ -1,70 +1,70 @@
-# Battery Capacity & Range
+# Battery capacity and range
 
-## Battery Spec
+## Pack spec
 
 | Parameter | Value |
 |-----------|-------|
 | Nominal voltage | 72 V |
 | Capacity | 30 Ah |
-| Max discharge rate | 100 A |
-| Chemistry | [Li-ion / LiFePO4 — check NBPower spec] |
-| Wh capacity | 72 × 30 = **2,160 Wh = 2.16 kWh** |
+| Max discharge | 100 A |
+| Chemistry | [Check the NBPower label - Li-ion or LiFePO4] |
+| Total energy | 72 * 30 = **2,160 Wh = 2.16 kWh** |
 
 ---
 
-## Usable Energy
+## Usable energy
 
-Batteries are typically not discharged to 0% (reduces cycle life).
+Don't discharge to zero - it kills cycle life. In practice work with 80-90% DoD.
 
-```
-E_usable = 2160 × DoD
-```
-
-| Depth of Discharge (DoD) | Usable Energy |
-|--------------------------|---------------|
-| 80% (conservative) | 1,728 Wh |
-| 90% (typical) | 1,944 Wh |
-| 100% (not recommended) | 2,160 Wh |
+| DoD | Usable energy |
+|-----|---------------|
+| 80% | 1,728 Wh |
+| 90% | 1,944 Wh |
+| 100% (avoid) | 2,160 Wh |
 
 ---
 
-## Range Estimate
+## Range estimate
 
-Energy consumption depends heavily on riding style and terrain.
+Varies a lot depending on how hard you're riding.
 
-| Riding Style | Est. Consumption (Wh/km) | Predicted Range (80% DoD) |
-|-------------|--------------------------|---------------------------|
-| Gentle trail | ~40 Wh/km | ~43 km |
-| Hard trail / enduro | ~70–100 Wh/km | ~17–25 km |
-| Flat road | ~25–35 Wh/km | ~50–70 km |
+| Riding style | Est. consumption (Wh/km) | Range at 80% DoD |
+|-------------|--------------------------|------------------|
+| Easy trail | ~40 Wh/km | ~43 km |
+| Hard enduro / climbing | ~70-100 Wh/km | ~17-25 km |
+| Flat road | ~25-35 Wh/km | ~50-70 km |
 
-> **Measure actual consumption**: log battery voltage before and after a known-distance run. Calculate Wh used and divide by distance.
+Measure actual consumption by logging voltage before and after a known-distance run.
 
-## Measured Consumption
+## Measured consumption log
 
-| Run | Distance (km) | Start Voltage | End Voltage | Est. Wh Used | Wh/km |
-|-----|--------------|--------------|-------------|--------------|-------|
+| Run | Distance (km) | Start voltage | End voltage | Wh used | Wh/km |
+|-----|---------------|---------------|-------------|---------|-------|
 | 1 | | | | | |
 | 2 | | | | | |
 
 ---
 
-## Current Limits
+## Current limits
+
+The battery limits sustained current more than the controller does:
 
 ```
-Max battery discharge current = 100 A
-Max controller continuous = 200 A
+Battery max: 100A
+Controller continuous: 200A
+Controller peak: 450A
+
+Sustained limit from pack = 100A * 72V = 7.2 kW
 ```
 
-> Battery is the limiting factor at sustained load — 100A × 72V = 7.2kW sustainable from pack.
-> Controller peak 450A bursts will sag the battery voltage — measure voltage under peak load.
+At peak current the battery voltage will sag - worth measuring.
 
-## Voltage Sag Under Load
+## Voltage sag under load
 
 | Condition | Voltage |
-|-----------|--------|
+|-----------|----------|
 | Resting (full) | [X] V |
-| Under 100A load | [X] V |
-| Under peak load (brief) | [X] V |
+| Under 100A | [X] V |
+| Brief peak | [X] V |
 
-> Measure with a multimeter or data logger while riding.
+Measure with a multimeter on the main leads, or add a data logger.

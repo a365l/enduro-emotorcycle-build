@@ -1,59 +1,56 @@
-# Controller Thermal Estimate
+# Controller thermal
 
-## Fardriver ND72450 Thermal Parameters
+## Heat at continuous rating
+
+Assuming 95% efficiency (typical for a good FOC controller):
+
+```
+P_in = P_out / n = 14,400 / 0.95 = 15,158 W
+P_loss = P_in - P_out = 758 W
+```
+
+758W to shift at full continuous load. The blue anodised aluminium body is the heatsink - fine for trail use with natural breaks, might derate on a long sustained climb.
+
+---
+
+## Parameters
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
-| Controller efficiency (est.) | ~95% | Typical for quality sine-wave FOC |
-| Continuous power output | 14.4 kW | 72V × 200A |
-| Power dissipated (continuous) | [X] W | P_loss = P_out × (1 - η) / η |
-| Thermal shutdown temp | [X] °C | Check Fardriver manual / beep code 8 |
-| Heatsink material | Aluminium (blue anodised body) | Observed |
+| Assumed efficiency | 95% | Typical FOC |
+| Continuous P_in | 15,158 W | Calculated |
+| Heat dissipated (continuous) | 758 W | Calculated |
+| Thermal shutdown temp | [X] °C | Check Fardriver manual - beep code 8 |
+| Heatsink | Blue anodised aluminium body | Observed |
 
 ---
 
-## Heat Dissipated at Continuous Rating
+## Thermal resistance
 
 ```
-η = 0.95 (assumed)
-P_in = P_out / η = 14,400 / 0.95 = 15,158 W
-P_loss = P_in - P_out = 15,158 - 14,400 = 758 W
-```
-
-> 758W of heat to dissipate at full continuous load. The blue aluminium body acts as a heatsink — adequate for intermittent trail use, may derate on sustained climbs.
-
----
-
-## Thermal Resistance Estimate
-
-```
-ΔT = P_loss × R_th
-R_th = ΔT_allowable / P_loss
+dT = P_loss * R_th
+R_th needed = dT_allowable / P_loss
 ```
 
 | Parameter | Value |
 |-----------|-------|
-| Ambient temp (worst case) | 35 °C |
-| Max junction temp | [X] °C (check datasheet) |
-| Allowable ΔT | [X - 35] °C |
-| Required R_th (case to ambient) | [X] °C/W |
+| Ambient (worst case) | 35 °C |
+| Max controller temp | [X] °C |
+| Allowable dT | [X] °C |
+| Required R_th | [X] °C/W |
 
 ---
 
-## Observed Thermal Behaviour
+## Measured behaviour
 
-| Condition | Controller temp (°C) | Duration before derate |
-|-----------|---------------------|------------------------|
-| Gentle trail | | |
+| Condition | Controller temp (°C) | Time before derate |
+|-----------|---------------------|--------------------|
+| Easy trail | | |
 | Hard acceleration | | |
-| Sustained hill climb | | |
+| Sustained climb | | |
 
-> Measure with an IR thermometer on the controller body during/after runs.
+Measure with an IR thermometer on the controller body after a run.
 
 ---
 
-## Notes
-
-- Fardriver fault beep code 8 = controller overtemp
-- Controller mounted in airflow? [Yes / No — note mounting position]
-- Consider adding airflow ducting if sustained derate observed
+Fardriver beep code 8 = controller too hot. If you're hitting it regularly, sort out more airflow around the controller.

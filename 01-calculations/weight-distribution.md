@@ -1,55 +1,47 @@
-# Weight & Centre of Gravity
+# Weight and CoG
 
-## Mass Budget
+## Mass budget
 
 | Component | Mass (kg) | Notes |
 |-----------|-----------|-------|
-| Frame (donor) | | Weigh bare frame |
-| Battery (NBPower 72V 30Ah) | | Weigh or check spec |
-| QS205 motor (in wheel) | | QS Motor spec / weigh |
+| Frame (donor) | | Weigh bare |
+| NBPower battery (72V 30Ah) | | Check spec or weigh |
+| QS205 motor + wheel | | Weigh or check QS Motor spec |
 | Fardriver ND72450 | | Weigh |
 | Wiring harness | | Estimate |
-| Tyres + wheels | | Weigh |
 | Forks + suspension | | Weigh |
-| Miscellaneous (fasteners, standoffs) | | Estimate |
+| Tyres + rims | | Weigh |
+| Misc (bolts, standoffs, etc.) | | ~0.5 kg |
 | **Total** | | |
 
 ---
 
-## Centre of Gravity Estimate
+## CoG position (front-rear)
 
-Method: weigh front and rear wheel separately with bike level, then:
+Weigh each wheel separately with the bike level:
 
 ```
-W_front + W_rear = W_total
-
-CoG position from rear axle:
-x_CoG = W_front × L_wheelbase / W_total
+CoG from rear axle = W_front * wheelbase / W_total
 ```
 
 | Measurement | Value |
 |-------------|-------|
-| Wheelbase L | [X] mm |
-| Weight on front wheel | [X] kg |
-| Weight on rear wheel | [X] kg |
-| Total weight | [X] kg |
+| Wheelbase | [X] mm |
+| Weight on front | [X] kg |
+| Weight on rear | [X] kg |
+| Total | [X] kg |
 | CoG from rear axle | [X] mm |
-| % on front | [X]% |
-| % on rear | [X]% |
+| % front | [X]% |
+| % rear | [X]% |
 
-> Target for enduro: ~45–50% front / 50–55% rear for balanced handling.
-
----
-
-## Height of CoG
-
-Method: tilt bike to known angle, measure weight shift.
-
-> Placeholder — measure when convenient. Not critical for Phase 2 but useful for Phase 3+ if handling is tuned.
+Typical enduro target: ~45-50% front / 50-55% rear.
 
 ---
 
-## Notes
+## CoG height
 
-- Battery position has a large influence on CoG — document where the pack is mounted on the frame
-- Hub motor adds unsprung mass at rear wheel — note any handling implications
+Can measure by tilting the bike to a known angle and checking weight shift. Not critical for Phase 2 but useful if handling needs tuning later.
+
+---
+
+Battery position has a big effect on CoG - note where the pack is mounted. Hub motor adds unsprung mass at the rear which affects how it rides over bumps.
