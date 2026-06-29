@@ -1,4 +1,4 @@
-# Fardriver ND72450 — Parameter Reference
+# Fardriver ND72450 - Parameter Reference
 
 ## Connector & Pin Reference
 
@@ -40,10 +40,10 @@
 1. Connect motor phase wires and hall sensor
 2. Power on controller
 3. Listen for sequence: 2 short beeps, then B-E-E-P pattern
-4. Autolearn completes: motor now mapped to controller
+4. Autolearn completes - motor now mapped to controller
 5. Test with gentle throttle before full power
 
-> Autolearn must be repeated any time motor or controller is replaced.
+Autolearn must be repeated any time motor or controller is replaced.
 
 ---
 
@@ -55,7 +55,7 @@
 | B | Phase B | Green  |
 | C | Phase C | Yellow |
 
-> See `../phase-2-fardriver/IMG_5464.JPEG` for installed photo.
+See `../phase-2-fardriver/IMG_5464.JPEG` for installed photo.
 
 ---
 
@@ -66,4 +66,4 @@
 | Fardriver BT app | Android/iOS | Basic parameter read/write |
 | Fardriver PC software | Windows | Full parameter access, data logging |
 
-> Log all parameter changes in `../05-testing/fardriver-tuning/README.md`
+Log all parameter changes in `../05-testing/fardriver-tuning/README.md`

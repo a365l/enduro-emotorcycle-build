@@ -1,4 +1,4 @@
-# Final Report — Enduro E-Motorcycle Build
+# Final Report - Enduro E-Motorcycle Build
 
 _To be written on project completion. Placeholder structure below._
 
@@ -12,7 +12,7 @@ _To be written on project completion. Placeholder structure below._
 
 ## 2. Specification vs Achievement
 
-> Table from `../00-specification/requirements-tracking.md` — which requirements were met, which were missed and why.
+> Table from `../00-specification/requirements-tracking.md` - which requirements were met, which were missed and why.
 
 ---
 
@@ -44,7 +44,7 @@ _To be written on project completion. Placeholder structure below._
 
 ---
 
-## 7. What I’d Do Differently
+## 7. What I'd Do Differently
 
 > Honest reflection: what assumptions were wrong, what would you change in the design or build sequence?
 

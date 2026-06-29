@@ -1,4 +1,4 @@
-# Trade Study: Wiring Method — Crimping vs Soldering
+# Trade Study: Wiring Method - Crimping vs Soldering
 
 ## Decision
 
@@ -12,12 +12,12 @@ Phase 2 onwards: **Crimped terminals** for all low-voltage signal wiring
 | Property | Soldering | Crimping |
 |----------|-----------|----------|
 | Connection resistance | Very low (if done well) | Low (comparable) |
-| Cold joint risk | Yes — failure mode with vibration | No |
+| Cold joint risk | Yes - failure mode with vibration | No |
 | Vibration resistance | Poor without strain relief | Excellent |
 | Serviceability | Requires soldering iron on-bike | Disconnect and re-crimp |
 | Speed | Slower | Faster for harness work |
 | Equipment needed | Iron, solder, flux, heat shrink | Crimping tool + terminals |
-| Skill sensitivity | High — cold joints hard to detect | Lower — consistent with correct tool |
+| Skill sensitivity | High - cold joints hard to detect | Lower - consistent with correct tool |
 | Suitable for signal wiring | Yes | Yes (preferred) |
 | Suitable for high-current (power cables) | Yes | Yes (hydraulic crimp for large AWG) |
 
@@ -25,9 +25,9 @@ Phase 2 onwards: **Crimped terminals** for all low-voltage signal wiring
 
 ## Decision Rationale
 
-- Vehicle wiring is subject to constant vibration — cold solder joints fail over time
+- Vehicle wiring is subject to constant vibration - cold solder joints fail over time
 - All OEM vehicle wiring uses crimped terminals for exactly this reason
-- The Fardriver signal harness uses Molex connectors natively — crimping matches the system
+- The Fardriver signal harness uses Molex connectors natively - crimping matches the system
 - Crimped joints are fully serviceable: pull the connector, replace the wire, re-crimp. No heat gun needed in the field
 - The US PRO 101pc kit covers all signal wire gauges used in this build
 
@@ -44,5 +44,5 @@ Phase 2 onwards: **Crimped terminals** for all low-voltage signal wiring
 
 ## Lessons
 
-- Map all wire assignments before crimping anything — pulling connectors apart to fix a wrong crimp wastes terminals and time (learned with Surron throttle → Fardriver adapter)
+- Map all wire assignments before crimping - pulling connectors apart to fix a wrong crimp wastes terminals and time (learned with Surron throttle to Fardriver adapter)
 - Buy more terminals than you think you need

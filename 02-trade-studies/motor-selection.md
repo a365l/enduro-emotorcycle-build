@@ -13,7 +13,7 @@ Date: [Phase 2]
 | Option | Type | Power | Weight | Cost | Notes |
 |--------|------|-------|--------|------|-------|
 | QS Motor QS205 | Hub (rear) | [X] kW | [X] kg | £[X] | Selected |
-| Generic hub motor (Phase 0) | Hub (rear) | ~3–4 kW | [X] kg | £[X] | Too weak, replaced |
+| Generic hub motor (Phase 0) | Hub (rear) | ~3-4 kW | [X] kg | £[X] | Too weak, replaced |
 | [Mid-drive option e.g. QS138] | Mid-drive | [X] kW | [X] kg | £[X] | Considered? |
 | [Other hub motor] | Hub | [X] kW | [X] kg | £[X] | | 
 
@@ -22,7 +22,7 @@ Date: [Phase 2]
 ## Selection Rationale
 
 **Why hub motor over mid-drive?**
-- Simpler drivetrain — no chain, sprocket, or reduction gearbox to design/source
+- Simpler drivetrain - no chain, sprocket, or reduction gearbox to design/source
 - Lower maintenance
 - Direct fit into existing wheel with 19" rim
 - Tradeoff: more unsprung mass, less torque multiplication
