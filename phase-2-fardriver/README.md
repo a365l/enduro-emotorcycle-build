@@ -2,7 +2,7 @@
 
 ## Overview
 
-Phase 2 was a major drivetrain upgrade. The budget generic hub motor and 80A generic controller from Phase 0 were replaced with a **QS Motor QS205** and a **Fardriver ND72450** (200A continuous / 450A peak). The NBPower 72V 30Ah 100A battery was carried over — it was always capable of more than the old controller allowed, so the same pack now actually gets to breathe.
+Phase 2 was a major power upgrade. The budget generic hub motor and 80A generic controller from Phase 0 were replaced with a **QS Motor QS205** and a **Fardriver ND72450** (200A continuous / 450A peak). The NBPower 72V 30Ah 100A battery was carried over - it was always capable of more than the old controller allowed, so the same pack now actually gets to breathe.
 
 A 19" × 80/100 rim was also fitted to match the QS205 motor. Wiring methodology changed completely this phase — everything crimped with proper terminals rather than soldered, which proved faster and more serviceable. The autolearn process was completed and wiring tested.
 
@@ -58,10 +58,10 @@ The Fardriver arrived in its distinctive blue anodised aluminium housing. The ha
 *Closer shot of the Fardriver box label and harness layout before unpacking*
 
 ![Fardriver mounted on bike — phase connections](./IMG_5464.JPEG)
-*Fardriver installed on the bike — blue anodised body bolted to the frame. Phase connection bolts clearly visible (blue, green, yellow for B/C/A phases). Battery cables (red/black) connected with XT connector*
+*Fardriver installed on the bike - blue anodised body bolted to the frame. Phase connection bolts clearly visible (blue, green, yellow for B/C/A phases). Battery cables (red/black) connected with XT connector*
 
 ![Fardriver mounted — full view](./IMG_5465.JPEG)
-*Side view with Fardriver fitted — blue controller sits above the NBPower battery in the frame, gold forks and seat visible. Full wiring run behind*
+*Side view with Fardriver fitted - blue controller sits above the NBPower battery in the frame, gold forks and seat visible. Full wiring run behind*
 
 ---
 
