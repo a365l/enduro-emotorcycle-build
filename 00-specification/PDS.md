@@ -6,13 +6,15 @@ Full DIY electric enduro conversion - donor ICE enduro frames with hub motor, li
 
 ## Performance targets
 
+Targets set from the [calculation set](../01-calculations/) - provisional until validated on the first instrumented ride.
+
 | ID | Requirement | Target | Measured | Done |
 |----|-------------|--------|----------|------|
-| P-001 | Top speed (flat) | > [X] mph | | [ ] |
-| P-002 | Range (trail) | > [X] km | | [ ] |
-| P-003 | 0-30 mph | < [X] s | | [ ] |
-| P-004 | Max gradient | > [X] deg | | [ ] |
-| P-005 | Kerb weight | < [X] kg | | [ ] |
+| P-001 | Top speed (flat) | > 50 mph (predicted ~55) | | [ ] |
+| P-002 | Range (trail) | > 15 km (predicted 17-25) | | [ ] |
+| P-003 | 0-30 mph | < 4.5 s (predicted ~3.6) | | [ ] |
+| P-004 | Max gradient | Climbs local trail hills without derate | | [ ] |
+| P-005 | Kerb weight | < 80 kg (weigh at next teardown) | | [ ] |
 
 ---
 
@@ -43,9 +45,8 @@ Full DIY electric enduro conversion - donor ICE enduro frames with hub motor, li
 
 ## Constraints
 
-- Budget: [£X total]
+- Budget: ~£3,000+ across all phases (partially offset by donor-bike flipping - exact tally in the [BOMs](../04-bom/))
 - Must use existing donor frame
-- Has to fit in [vehicle]
 - Off-road only
 
 ---

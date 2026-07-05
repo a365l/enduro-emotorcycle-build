@@ -6,7 +6,7 @@
 |-----------|-----------|-------|
 | Frame (donor) | | Weigh bare |
 | NBPower battery (72V 30Ah) | | Check spec or weigh |
-| QS205 motor + wheel | | Weigh or check QS Motor spec |
+| QS205 motor + wheel | ~14 (motor only, QS spec) + rim/tyre | Weigh assembled wheel |
 | Fardriver ND72450 | | Weigh |
 | Wiring harness | | Estimate |
 | Forks + suspension | | Weigh |
