@@ -27,7 +27,7 @@ Predictions from: [top speed](../01-calculations/top-speed-prediction.md) · [po
 | Resting battery voltage (full) | ~84 V (if 20S li-ion - verify) | | |
 | Battery voltage under 100A load | ~78-80 V (est. sag) | | |
 | Controller temp after 10 min trail | < thermal cutout (beep code 8) | | |
-| Peak current draw (Fardriver app) | 450 A phase (launch, briefly) | | |
+| Peak current draw (Fardriver app) | ≤300 A phase (configured limit; launch, briefly) | | |
 
 ---
 

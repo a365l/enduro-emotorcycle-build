@@ -28,7 +28,7 @@ _To be written on project completion. Placeholder structure below._
 |-------|----------|---------|
 | Phase 0 | First power-up, first ride | Bike running on generic components |
 | Phase 1 | Donor bike teardown, repairs | [Summary] |
-| Phase 2 | QS205 + Fardriver upgrade | 32.4kW peak, controller bottleneck removed |
+| Phase 2 | QS205 + Fardriver upgrade | Controller bottleneck removed; tuned to 100A battery / 300A phase to match the pack |
 
 ---
 

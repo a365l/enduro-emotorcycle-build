@@ -5,9 +5,11 @@
 | Parameter | Value | Source |
 |-----------|-------|--------|
 | Bus voltage (nominal) | 72 V | NBPower spec |
-| Peak controller current | 450 A | Fardriver ND72450 |
-| Continuous controller current | 200 A | Fardriver ND72450 |
+| Peak controller current (rating) | 450 A | Fardriver ND72450 |
+| Continuous controller current (rating) | 200 A | Fardriver ND72450 |
 | Battery max discharge | 100 A | NBPower spec |
+| Configured battery current limit | 100 A | Fardriver app - set to match the pack rating |
+| Configured phase current limit | 300 A | Fardriver app |
 | QS205 winding | 3.5T (50H V3) | Order spec |
 | QS205 KV | ~12.9 RPM/V | Derived: QS 5T datasheet = 9.03 KV, scaled ×(5/3.5). Verify with no-load spin test |
 | QS205 max torque | 190 Nm | QS Motor 50H V3 datasheet |
@@ -16,21 +18,18 @@
 
 ---
 
-## Peak electrical power
+## Electrical power (as configured)
+
+The controller is software-limited to 100 A battery / 300 A phase to match the pack, so battery-side power is capped at:
 
 ```
-P_peak = V * I_peak
-P_peak = 72 * 450 = 32,400 W = 32.4 kW = 43.4 hp
+P_max = V * I_batt_limit
+P_max = 72 * 100 = 7,200 W = 7.2 kW = 9.7 hp
 ```
 
-## Continuous electrical power
+The controller's hardware rating (200 A continuous / 450 A peak, i.e. 32.4 kW theoretical) is headroom, not delivered power - those numbers are never reached with this pack and these settings. A future battery upgrade raises the configured limits without changing hardware.
 
-```
-P_cont = V * I_cont
-P_cont = 72 * 200 = 14,400 W = 14.4 kW = 19.3 hp
-```
-
-**Reality check - the battery is the sustained limit.** The pack is rated 100 A, so sustained power is capped at 72 × 100 = **7.2 kW** regardless of what the controller can switch. But peak *torque* at launch is still available: the controller acts like a buck converter, so 450 A of phase current at low speed only draws a fraction of that from the battery. High phase current + low battery current = full launch torque without exceeding the pack rating. Battery current only approaches phase current as speed rises.
+**Why launch torque survives the 100 A battery cap.** The controller acts like a buck converter, so 300 A of phase current at low speed only draws a fraction of that from the battery. High phase current + low battery current = strong launch torque without exceeding the pack rating. Battery current only approaches phase current as speed rises.
 
 ## Motor shaft speed (nominal voltage, no load)
 
@@ -43,7 +42,7 @@ Real RPM under load will be lower due to voltage sag under current.
 
 ## Torque at wheel
 
-Peak torque comes from the motor datasheet (190 Nm max) rather than P/ω, which isn't valid near stall. Hub motor is direct drive - ratio 1:1, so only drivetrain efficiency applies:
+Peak torque comes from the motor datasheet (190 Nm max) rather than P/ω, which isn't valid near stall. The datasheet max may require more than the configured 300 A phase limit - actual peak torque at 300 A is to be measured on the first instrumented ride, so treat the figures below as an upper bound. Hub motor is direct drive - ratio 1:1, so only drivetrain efficiency applies:
 
 ```
 T_wheel = T_motor * n_drive = 190 * 0.95 = ~180 Nm
@@ -72,4 +71,4 @@ t = delta_v / a
 
 ---
 
-Peak current is burst only - controller derates on heat. In practice acceleration will hit traction limits on loose surfaces before the theoretical peak anyway.
+Phase current is burst only - controller derates on heat. In practice acceleration will hit traction limits on loose surfaces before the configured peak anyway.

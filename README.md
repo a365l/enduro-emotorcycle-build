@@ -13,7 +13,7 @@ A full ground-up DIY 72V electric enduro motorcycle - frame, motor, battery, wir
 | Motor | QS Motor QS205 50H V3, 3.5T winding, rear hub (150 mm dropout) |
 | Controller | Fardriver ND72450 - FOC sine wave, 200 A continuous / 450 A peak |
 | Battery | NBPower 72 V 30 Ah (2.16 kWh), 100 A discharge |
-| Peak electrical power | 32.4 kW (72 V × 450 A burst) |
+| Configured limits | 100 A battery / 300 A phase (set in the Fardriver app to match the pack's 100 A rating) |
 | Wheel | 19" spoke rim, 80/100 enduro tyre |
 | Brakes | Shimano MT501 hydraulic |
 | Wiring | Fully crimped terminals (Phase 2 rework - no soldered joints in the loom) |
