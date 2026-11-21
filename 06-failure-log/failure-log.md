@@ -2,6 +2,8 @@
 
 _Running record: symptom → root cause → fix → retest. Add entries as issues occur._
 
+**Evidence standard:** a root cause is only marked **Confirmed** when it's backed by direct evidence - a measurement (meter reading, gauge, torque), a photo of the physical cause (witness marks, contamination, damage), or a repeatable test where changing one variable makes the fault come and go. Anything else is a **Hypothesis**, with the evidence for and against listed. AI suggestions are used to plan tests, never as evidence. Successful fixes are logged too, with the retest evidence.
+
 ---
 
 ## FL-001 — [Date] — Throttle wiring mismatch: Surron → Fardriver
@@ -70,7 +72,10 @@ _Running record: symptom → root cause → fix → retest. Add entries as issue
 
 **Photo:** `../logbook/session/media/26-11-21/57-bench-run-2-smoke.mov`, `59-bench-run-2-smoke-frames.jpg`, `60-rotor-cable-clearance.jpg`
 
-**Root cause:** Heavy grease on the rotor bolts, flung onto the rotor and pads at high RPM, burning off when I braked the spinning wheel. Confirmed by a third run with no braking = no smoke. Brown streaky braking track supports it. Ruled out on the way: motor cable rubbing (tied clear, no scuffs), strap/tyre rub.
+**Root cause:** Hypothesis (strong): grease from the rotor bolts contaminating the pads, burning off under braking.
+- Evidence for: smoke on runs 1-2 when I braked the spinning wheel; run 3 with no braking = no smoke (video 61); heavy grease seen on the rotor bolts; brown streaky braking track (photo 60).
+- Ruled out: motor cable rub (tied clear, no scuffs), strap/tyre rub (no marks).
+- Still needed to confirm: photo of the pads out of the caliper (oil staining/glazing), and a no-smoke retest with new pads + degreased rotor.
 
 **Fix:** Replace pads (metal/sintered), degrease rotor + bolts, check caliper/hose for leaks, blue Loctite (not grease) on rotor bolts, bed in.
 
@@ -88,7 +93,7 @@ _Running record: symptom → root cause → fix → retest. Add entries as issue
 
 **Photo:** `../logbook/session/media/26-11-21/01-rear-caliper-on-10mm-standoffs.jpg`, `75-caliper-adapter-standoffs-side.jpg`
 
-**Root cause:** One mount bolt wasn't fully tight, and the bolts only thread into the Shimano adapter (no nut, short engagement) so they can't hold real preload. Two separate standoffs rock when the clamp load is low.
+**Root cause:** Partly confirmed: one mount bolt was found not fully tight (tightening it visibly reduced the play). Hypothesis for the rest: and the bolts only thread into the Shimano adapter (no nut, short engagement) so they can't hold real preload. Two separate standoffs rock when the clamp load is low.
 
 **Fix:** Tightened the loose bolt + washers (much less play). Next: proper 10.9 bolts with enough thread engagement or nyloc nuts, Loctite, torque wrench. If it still flexes, a one-piece milled bracket.
 
@@ -122,7 +127,7 @@ _Running record: symptom → root cause → fix → retest. Add entries as issue
 
 **Symptom:** After a run the motor kept driving at ~half throttle with the throttle released. Only the key stopped it.
 
-**Root cause:** Under investigation. Suspect 1: Fardriver Cruise Function engaged after a steady hold - normally cancelled by the brake, but my brake cut-offs aren't wired. Suspect 2: throttle signal fault (lost ground or signal shorted towards 5 V) in the adapter wiring.
+**Root cause:** Hypothesis, unconfirmed. Suspect 1: Fardriver Cruise Function engaged after a steady hold - normally cancelled by the brake, but my brake cut-offs aren't wired. Suspect 2: throttle signal fault (lost ground or signal shorted towards 5 V) in the adapter wiring.
 
 **Fix:** Cruise OFF. Measure throttle signal at idle (~0.8-1.0 V expected). Wire brake cut-off switches. Fit a handlebar kill switch.
 
@@ -140,7 +145,10 @@ _Running record: symptom → root cause → fix → retest. Add entries as issue
 
 **Photo:** `../logbook/session/media/26-11-21/65-stationary-hum-spectrogram.png`
 
-**Root cause:** Spectrogram shows steady switching tones, so the controller is still driving current into a stalled motor. Likely the same cause as FL-007, or a hold/regen setting (Energy feedback was on 0-follow).
+**Root cause:** Hypothesis: the controller is still driving current into a stopped motor.
+- Evidence: wheel stopped by hand in the video but the hum continues; spectrogram of my recording shows steady tones (~4 / 7.3 / 10 kHz) for the whole clip.
+- Still needed: Graph-tab screenshot of throttle voltage + phase current while it hums.
+- Possibly the same cause as FL-007, or a hold/regen setting (Energy feedback was on 0-follow).
 
 **Fix:** Check throttle V + phase current in the Graph tab while it hums. Try Cruise/P off and regen 1 (none).
 
