@@ -160,6 +160,8 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 67 | ![Gap](./2026-11-21-photos/67-screw-to-rotor-gap-closeup.jpg) Mount screw within ~1 mm of the rotor |
 | 68 | ![Rotor edge](./2026-11-21-photos/68-rotor-edge-near-mount.jpg) Rotor edge passing close to the mount hardware |
 | 69 | ![Bolts](./2026-11-21-photos/69-mount-bolts-axle-rotor.jpg) Mount bolts, axle nut and torque washer next to the rotor |
+| 70 | ![Measuring 1](./2026-11-21-photos/70-measuring-mount-offset-1.jpg) Measuring the caliper/rotor to mount-plate offset with a tape |
+| 71 | ![Measuring 2](./2026-11-21-photos/71-measuring-mount-offset-2.jpg) Second offset measurement |
 
 ## Next session plan
 
