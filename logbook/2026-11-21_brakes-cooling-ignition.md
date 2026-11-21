@@ -149,6 +149,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 60 | ![Rotor and cable](./2026-11-21-photos/60-rotor-cable-clearance.jpg) Post-run inspection: motor cable loops out of the axle right against the rotor's inner arms; brown/discoloured braking track |
 | 61 | [Video](./2026-11-21-photos/61-bench-run-3.mov) Third bench run (53 s), rider's-eye view |
 | 62 | ![Spectrogram](./2026-11-21-photos/62-bench-run-3-spectrogram.png) Spectrogram: smooth rising/falling motor tones, no once-per-rev ticking, extra broadband noise only at higher speed |
+| 63 | ![EABS options](./2026-11-21-photos/63-fardriver-energy-feedback-options.png) Fardriver Energy feedback (regen) options: 0-follow, 1-none, 2–4 brake-triggered EABS, 5–7 throttle-release EABS |
 
 ## Next session plan
 
