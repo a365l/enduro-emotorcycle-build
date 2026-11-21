@@ -4,6 +4,24 @@
 
 Workshop session after the house move. Checked brake caliper rigidity, widened a frame hole, reviewed controller cooling and motor cable routing, then traced and tested the ignition key circuit. Everything was photographed for the build write-up.
 
+## Build story (in order)
+
+1. **Brakes:** found the rear Shimano caliper flexing 1–2 mm under thumb pressure. It sat on two separate 10 mm standoffs. A rotor spacer was ruled out (the rotor already sits close to the hall cable and has chewed it), so the plan is a one-piece milled spacer block. (01)
+2. **Frame:** widened a frame hole with a carbide burr, run dry; mask and glasses for the steel/paint dust. (02)
+3. **Cooling:** the Fardriver's heatsink was facing the battery pack, so the plan is to flip it toward the frame or move it outside the box. (03)
+4. **Motor cable:** planned the QS205 cable's excess length as a loose loop with slack for suspension travel. (04)
+5. **Ignition, tracing:** traced the key barrel to a white 3-pin plug with only 2 wires (red/orange). Continuity: OL key off, continuous key on, so a simple switch with no polarity. Labelled it `IGN`. (05–11)
+6. **Accessory feed off B+:** stacked a second 10 AWG lug on controller B+, swapped so the main 8 AWG lug sits against the terminal. Confirmed the controller is an ND72450 (200/450 A). (12–15, 39)
+7. **Parts reuse:** harvested the mating key connector from the old Phase 1 controller's loom. (16–17)
+8. **Step-down to thin wire:** the thin wire was too small for the yellow terminal, so I soldered a pigtail into a red terminal, taped it, and added an inline single-pin JST-SM. Continuity B+ → feed end: 0.39 Ω. (18–23)
+9. **Key wired direct:** cut the key plug off. Key orange → B+ feed via JST, key red → Fardriver ignition. Doubled two wires in one crimp to Y-split the switched output into ignition and a spare accessory lead for the lights. (24–25, 44–47)
+10. **Crimping lesson:** 5 butt crimps failed on thin wire because the barrel was under-filled. Fixed by folding the strands back to bulk them up. A ratchet crimper is on the shopping list. (26–27, 48)
+11. **Lights:** identified a 4-LED headlight (3-wire: +, −, control) and a Temu dual-colour 20-LED bar. The CE label traced the maker to Guangzhou Demu Car Products (a car part), so it's 12V only. Mapped the 3-wire bar (black ground, red/white colours). (28–32, 40–41, 43)
+12. **Power for the lights:** the 72V→12V DC-DC converter read MΩ input→output with different readings each way (diode behaviour), so it's probably healthy. An earlier "0 Ω" was a probe-contact and units mix-up. Worked out that the 72V input side draws only ~1A, so JST-SM is fine there, but the 12V side to the 60W bar is ~5A and needs an XT30. (34–35)
+13. **Switch pod:** headlight / indicators / horn pod to map with continuity. Indicators need a flasher relay, and the bar should go through a relay. (33)
+14. **Workshop:** checked the garage roof trusses for strapping the bike up: use a bottom chord near a nail plate, never the diagonal bracing. (49)
+15. **Terminal cover:** with two leads on B+, the controller cover wouldn't seat. Notched the B+ slot and smoothed the edges, and it now sits flat with the leads loose in the slot. Never force a lid onto live cables. (50–51)
+
 ## Progress
 
 - [x] Rear caliper flex check: the caliper moves 1–2 mm under hard thumb pressure. The Shimano post-mount adapter sits on two separate 10 mm standoffs.
@@ -113,6 +131,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 48 | ![Failed crimps](./2026-11-21-photos/48-failed-butt-crimps.jpg) 5 failed red butt crimps on thin wire, before switching to folded strands |
 | 49 | ![Roof trusses](./2026-11-21-photos/49-garage-roof-trusses.jpg) Garage roof trusses: strap from a bottom chord near a nail plate, never the bracing |
 | 50 | ![Cover](./2026-11-21-photos/50-controller-cover-two-b-plus-leads.jpg) Terminal cover won't seat with two B+ leads in one slot |
+| 51 | ![Cover notched](./2026-11-21-photos/51-cover-notched-fits.jpg) B+ slot notched: cover now sits flat with both leads loose in the slot |
 
 ## Next session plan
 
