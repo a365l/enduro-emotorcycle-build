@@ -40,6 +40,8 @@ Each phase README is fully photo-documented - the build story, the wiring, the f
 | [`05-testing/`](./05-testing/) | Test vs prediction, Fardriver tuning, performance logs |
 | [`06-failure-log/`](./06-failure-log/failure-log.md) | Symptom → root cause → fix → retest, for every failure |
 | [`07-firmware-config/`](./07-firmware-config/) | Fardriver parameter documentation |
+| [`wiring-key.md`](./wiring-key.md) | Wiring key: every circuit, wire colour, label code and fuse |
+| [`logbook/`](./logbook/) | Session-by-session build log with photos |
 
 ## Three lessons that cost the most
 
