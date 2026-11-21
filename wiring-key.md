@@ -44,6 +44,8 @@ Controller B+ ──[FUSE 3–5 A]──red── KEY SWITCH ──orange── 
 | Red | Supply in, at pack voltage | Controller B+, **through a fuse** |
 | Orange | Switched out, at pack voltage with the key ON | Controller ignition connector (check the Fardriver pin sheet) |
 
+*As wired 2026-11-21: key **orange** ↔ B+ feed (10 AWG → pigtail → inline connector) and key **red** ↔ Fardriver ignition (orange). The switch has no polarity, so this is equivalent. A spare `ACC 72V SW` lead is planned to feed or enable the DC-DC.*
+
 - **Key connector:** white 3-pin housing with 2 positions used (red and orange) and 1 empty slot.
 - **Switch type:** simple 2-wire contact with no polarity. Continuity tested on 2026-11-21: OL with the key off, continuous with the key on.
 - **Fuse:** 3–5 A, **rated ≥ 72 V DC**. A ceramic 5×20 mm 250 V fuse in an inline holder works. A standard 32 V car blade fuse is not suitable. ⚠️ *Not yet fitted. Bench testing only until it is.*
@@ -70,7 +72,21 @@ Controller B+ ──[FUSE 3–5 A]──red── KEY SWITCH ──orange── 
 
 **Excess cable length:** store as a loose loop (≥ 15–20 cm diameter), ties snug but not crushing. Keep slack for full suspension travel.
 
-### 5. Signal harness (Fardriver)
+### 5. 12V accessories (planned)
+
+```
+ACC 72V SW ──[fuse]── DC-DC 72V→12V ──[12V fuses]── switch pod / relays ── lights, indicators, horn
+B− ACC ───────────── DC-DC ground (common)
+```
+
+| Item | Notes |
+|---|---|
+| DC-DC | Red = 72V in, yellow = 12V out, black ×2 = common ground. Unit 1 passed the resistance check. Unit 2 untested. |
+| Light bar | Temu dual-colour white/amber, 20 LEDs, maker Guangzhou Demu Car Products (car part). **12V only.** 3 wires: black = ground, red/white = the colours. Draw TBC. Switch via a relay. |
+| Headlight | 4-LED, voltage unknown. Run at 12V. |
+| Switch pod | Headlight, indicator rocker (common + L + R), horn. Indicators need a 12V LED flasher relay. |
+
+### 6. Signal harness (Fardriver)
 
 See the [connector map](./phase-2-fardriver/README.md#wiring-reference) and [`07-firmware-config/fardriver-parameters.md`](./07-firmware-config/fardriver-parameters.md) for the full pin table: high/low brake, ignition, hall, throttle, three-speed, alarm and lock, analog meter, program port, reverse, boost/cruise.
 

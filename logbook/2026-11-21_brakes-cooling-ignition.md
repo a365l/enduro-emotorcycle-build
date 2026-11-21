@@ -13,8 +13,17 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 - [x] Ignition key traced to a white 3-pin plug with 2 wires (red/orange)
 - [x] Key continuity test passed: a simple switch with no polarity
 - [x] Key cable labelled `IGN`
-- [ ] Wire the key: red → fused B+, orange → controller ignition
+- [x] Second lug (10 AWG) stacked on controller B+ for the ignition/accessory feed, with the main 8 AWG lug against the terminal
+- [x] Key-feed lead built: 10 AWG off B+ → soldered thin-wire pigtail (taped temporarily) → inline single-pin connector
+- [x] Continuity B+ → end of the key feed: 0.39 Ω (≈ meter lead resistance)
+- [x] Key plug cut off. Key wired direct: key red ↔ Fardriver ignition (orange), key orange ↔ B+ feed. The switch has no polarity.
+- [x] Lights identified: 4-LED headlight, plus a Temu dual-colour (white/amber) 20-LED bar made by Guangzhou Demu Car Products. No voltage rating on it, so it's treated as 12V.
+- [x] 72V→12V DC-DC: input→output read in MΩ, different in each direction (diode behaviour), so probably healthy
+- [ ] Fit a fuse rated ≥ 72V DC in the key feed (blade fuse only for supervised bench tests)
 - [ ] Voltage test at the ignition pin
+- [ ] DC-DC: diode-mode check, then fused no-load test (expect 12–14V on yellow). Test unit 2.
+- [ ] Light bar on the 12V jump pack: check which wire is white/amber and measure current draw
+- [ ] Map the switch pod with continuity
 - [ ] Mill a one-piece caliper spacer block
 
 ## What worked
@@ -29,6 +38,8 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 - **Controller heatsink facing the battery:** it heats the pack. Flip it to face the frame or move it outside the box.
 - **No fuses on hand:** the ignition feed must be fused before riding
 - **Charger blade fuse** is probably 32 V rated on a 72 V system
+- **Thin-wire crimps slipping:** the wire is too thin for red terminals. Fold the strands back to bulk them up. Longer term, get a ratchet crimper.
+- **DC-DC misread:** the meter was on the MΩ range, so "8"/"18" were megaohms (healthy), not ohms. Check the units on the display.
 
 ## Measurements / data taken
 
@@ -38,6 +49,8 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | Caliper deflection (hard thumb pressure) | ~1–2 mm |
 | Key switch, key OFF (red–orange) | OL (open) |
 | Key switch, key ON (red–orange) | Continuity |
+| B+ terminal → key-feed end | 0.39 Ω |
+| DC-DC red (in) → yellow (out) | ~8–18 MΩ, direction-dependent |
 
 ## Caliper spacer block spec (to make)
 
@@ -61,6 +74,37 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 09 | ![Red/orange](./2026-11-21-photos/09-key-plug-red-orange.jpg) Key plug pinout: red (supply) and orange (switched), one empty slot |
 | 10 | ![OL baseline](./2026-11-21-photos/10-continuity-ol-baseline.jpg) Continuity test baseline: OL |
 | 11 | ![IGN label](./2026-11-21-photos/11-ign-label-fitted.jpg) Key cable labelled `IGN` |
+| 12 | ![Second lug added to controller B+](./2026-11-21-photos/12-controller-b-plus-two-lugs.jpg) Second lug added to controller B+ |
+| 13 | ![ND72450 label (200 A / 450 A) and lug stacking](./2026-11-21-photos/13-nd72450-label-lug-stack.jpg) ND72450 label (200 A / 450 A) and lug stacking |
+| 14 | ![Main power lug restacked against the terminal](./2026-11-21-photos/14-lugs-swapped-main-underneath.jpg) Main power lug restacked against the terminal |
+| 15 | ![10 AWG accessory lead on B+](./2026-11-21-photos/15-b-plus-accessory-lead-fitted.jpg) 10 AWG accessory lead on B+ |
+| 16 | ![Old Phase 1 controller, harvested for parts](./2026-11-21-photos/16-old-controller-harvest-box.jpg) Old Phase 1 controller, harvested for parts |
+| 17 | ![Taking the mating key connector from the old loom](./2026-11-21-photos/17-old-controller-connector-harvest.jpg) Taking the mating key connector from the old loom |
+| 18 | ![Thin wire vs 10 AWG yellow terminal: size mismatch](./2026-11-21-photos/18-thin-wire-vs-yellow-terminal.jpg) Thin wire vs 10 AWG yellow terminal: size mismatch |
+| 19 | ![Soldering setup](./2026-11-21-photos/19-soldering-pigtail-setup.jpg) Soldering setup |
+| 20 | ![Soldered thin-wire pigtail](./2026-11-21-photos/20-solder-joint-pigtail.jpg) Soldered thin-wire pigtail |
+| 21 | ![Pigtail taped, with inline single-pin connector](./2026-11-21-photos/21-pigtail-taped-inline-connector.jpg) Pigtail taped, with inline single-pin connector |
+| 22 | ![Key-feed lead assembled](./2026-11-21-photos/22-key-feed-lead-assembled.jpg) Key-feed lead assembled |
+| 23 | ![Continuity check: 0.39 Ω](./2026-11-21-photos/23-continuity-b-plus-to-feed-0-39-ohm.jpg) Continuity check: 0.39 Ω |
+| 24 | ![IGN-labelled key cable in the frame](./2026-11-21-photos/24-key-cable-ign-label-in-frame.jpg) IGN-labelled key cable in the frame |
+| 25 | ![Key plug removed for direct wiring](./2026-11-21-photos/25-key-plug-removed-direct-wiring.jpg) Key plug removed for direct wiring |
+| 26 | ![Thin-wire butt crimps slipping](./2026-11-21-photos/26-thin-wire-crimp-slipping.jpg) Thin-wire butt crimps slipping |
+| 27 | ![Folding strands to bulk up the crimp](./2026-11-21-photos/27-folding-strands-for-crimp.jpg) Folding strands to bulk up the crimp |
+| 28 | ![Front 4-LED headlight](./2026-11-21-photos/28-front-headlight-4-led.jpg) Front 4-LED headlight |
+| 29 | ![Temu light bar](./2026-11-21-photos/29-light-bar-temu.jpg) Temu light bar |
+| 30 | ![Dual-colour 20-LED double-row bar](./2026-11-21-photos/30-light-bar-dual-colour-leds.jpg) Dual-colour 20-LED double-row bar |
+| 31 | ![End cap open: red/white/black, 3-wire dual colour](./2026-11-21-photos/31-light-bar-end-cap-open-3-wires.jpg) End cap open: red/white/black, 3-wire dual colour |
+| 32 | ![CE label: Guangzhou Demu Car Products, batch DMWT110](./2026-11-21-photos/32-light-bar-ce-label-demu.jpg) CE label: Guangzhou Demu Car Products, batch DMWT110 |
+| 33 | ![Handlebar switch pod: headlight, indicators, horn](./2026-11-21-photos/33-handlebar-switch-pod.jpg) Handlebar switch pod: headlight, indicators, horn |
+| 34 | ![72V→12V DC-DC converter](./2026-11-21-photos/34-dc-dc-72v-12v-converter.jpg) 72V→12V DC-DC converter |
+| 35 | ![DC-DC resistance test](./2026-11-21-photos/35-dc-dc-resistance-test.jpg) DC-DC resistance test |
+| 36 | ![Labelling tape](./2026-11-21-photos/36-labelling-tape.jpg) Labelling tape |
+| 37 | ![Garage after the move, controller off the bike](./2026-11-21-photos/37-garage-tool-search-controller-off-bike.jpg) Garage after the move, controller off the bike |
+| 38 | ![Fardriver harness map printout](./2026-11-21-photos/38-fardriver-harness-map-printout.jpg) Fardriver harness map printout |
+| 39 | ![B+ accessory lead and XT main leads](./2026-11-21-photos/39-b-plus-lead-and-xt-main-leads.jpg) B+ accessory lead and XT main leads |
+| 40 | ![Light bar end cap screws](./2026-11-21-photos/40-light-bar-end-cap-screws.jpg) Light bar end cap screws |
+| 41 | ![Temu order thumbnail](./2026-11-21-photos/41-light-bar-temu-order-thumbnail.jpg) Temu order thumbnail |
+| 42 | ![B+ lug stack in the frame](./2026-11-21-photos/42-b-plus-lug-stack-in-frame.jpg) B+ lug stack in the frame |
 
 ## Next session plan
 
