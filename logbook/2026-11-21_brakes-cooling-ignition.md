@@ -162,6 +162,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 69 | ![Bolts](./2026-11-21-photos/69-mount-bolts-axle-rotor.jpg) Mount bolts, axle nut and torque washer next to the rotor |
 | 70 | ![Measuring 1](./2026-11-21-photos/70-measuring-mount-offset-1.jpg) Measuring the caliper/rotor to mount-plate offset with a tape |
 | 71 | ![Measuring 2](./2026-11-21-photos/71-measuring-mount-offset-2.jpg) Second offset measurement |
+| 72 | ![Underside](./2026-11-21-photos/72-mount-stack-underside-view.jpg) Underside view of the mount stack: two silver standoffs on the grey plate under the caliper, with a third bolt between them pointing up toward the rotor/caliper |
 
 ## Next session plan
 
