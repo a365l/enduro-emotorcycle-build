@@ -109,6 +109,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 44 | ![Key feed connector](./2026-11-21-photos/44-key-orange-to-feed-jst-connector.jpg) Key orange crimped to the blue feed with a single-pin JST-SM connector |
 | 45 | ![Key circuit wired](./2026-11-21-photos/45-key-circuit-wired-jst-chain.jpg) Key circuit wired: B+ feed → JST → key → Fardriver ignition |
 | 46 | ![JST adaptor](./2026-11-21-photos/46-jst-adaptor-lead.jpg) Home-made JST-SM adaptor lead for the accessory feed |
+| 47 | ![Feed routed](./2026-11-21-photos/47-key-ignition-feed-routed.jpg) Key/ignition feed routed down the frame to the Fardriver harness |
 
 ## Next session plan
 
