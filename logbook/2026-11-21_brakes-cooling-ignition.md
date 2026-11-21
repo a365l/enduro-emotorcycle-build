@@ -111,6 +111,8 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 46 | ![JST adaptor](./2026-11-21-photos/46-jst-adaptor-lead.jpg) Home-made JST-SM adaptor lead for the accessory feed |
 | 47 | ![Feed routed](./2026-11-21-photos/47-key-ignition-feed-routed.jpg) Key/ignition feed routed down the frame to the Fardriver harness |
 | 48 | ![Failed crimps](./2026-11-21-photos/48-failed-butt-crimps.jpg) 5 failed red butt crimps on thin wire, before switching to folded strands |
+| 49 | ![Roof trusses](./2026-11-21-photos/49-garage-roof-trusses.jpg) Garage roof trusses: strap from a bottom chord near a nail plate, never the bracing |
+| 50 | ![Cover](./2026-11-21-photos/50-controller-cover-two-b-plus-leads.jpg) Terminal cover won't seat with two B+ leads in one slot |
 
 ## Next session plan
 
