@@ -25,6 +25,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 17. **First powered bench run:** rear lifted on the strap; Fardriver auto-learn completed fine. A rub was audible. On a full-throttle no-load run, a large plume of smoke came from the caliper/rear wheel area. Stopped testing. Suspects: rotor cutting into the already-chafed hall/phase cable, or pads dragging on the rotor (caliper on flexy standoffs). Investigation pending. Nothing was hot afterwards, which points to brief friction (strap or tyre rub) rather than pad drag. Also found a caliper-mount screw pointing at the rotor with under 1 mm static clearance: a likely contact point once the rotor and the flexy caliper move at speed.
 18. **Noise analysis:** recorded the bench run and generated a spectrogram (ffmpeg). It shows regularly spaced broadband ticks (~9 per second at low speed), consistent with something contacting once per wheel revolution, separate from the normal rising FOC/motor whine. Supports the rub hypothesis. (55–56)
 19. **Second bench run:** smoke again, appearing just after the longest/fastest throttle burst. Under investigation: pad/rotor contamination (possibly brake fluid from the earlier bleed) heating up when braking a fast-spinning wheel, vs rotor contact with the mount screw. Inspection (60) found the thick motor cable leaving the axle and running right against the rotor's inner arms (the same cable already chewed before), plus a thin black strip/tie tail next to it, and a brown, discoloured braking track. The cable was found firmly tied clear with no scuff marks anywhere, so a rub is unlikely. **New prime suspect: grease.** Heavy grease on the rotor bolts gets flung outward at high RPM onto the rotor and pads, then burns off. That fits the sudden smoke, nothing staying hot, no scuffs, and the brown streaky braking track. (57–60)
+20. **Third bench run:** the audio shows smooth motor tones with no periodic ticking (unlike run 1), and no visible smoke in the frames. (61–62)
 
 ## Progress
 
@@ -145,6 +146,8 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 58 | ![Spectrogram](./2026-11-21-photos/58-bench-run-2-spectrogram.png) Spectrogram: about five throttle bursts with coast-down chirps; smoke follows the longest, fastest burst (~45–55 s) |
 | 59 | ![Smoke frames](./2026-11-21-photos/59-bench-run-2-smoke-frames.jpg) Frames 51–60 s: haze appears around the upper hub/axle area right after the final burst |
 | 60 | ![Rotor and cable](./2026-11-21-photos/60-rotor-cable-clearance.jpg) Post-run inspection: motor cable loops out of the axle right against the rotor's inner arms; brown/discoloured braking track |
+| 61 | [Video](./2026-11-21-photos/61-bench-run-3.mov) Third bench run (53 s), rider's-eye view |
+| 62 | ![Spectrogram](./2026-11-21-photos/62-bench-run-3-spectrogram.png) Spectrogram: smooth rising/falling motor tones, no once-per-rev ticking, extra broadband noise only at higher speed |
 
 ## Next session plan
 
