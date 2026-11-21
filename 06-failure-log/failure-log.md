@@ -61,3 +61,127 @@ _Running record: symptom → root cause → fix → retest. Add entries as issue
 **Lesson:** Identify the limiting component with numbers, not assumptions - every element of the powertrain has a current rating, and the system is only as strong as the lowest one.
 
 ---
+
+## FL-004 - 21/11/2026 - Smoke from the rear brake on bench runs
+
+**Phase:** 3
+
+**Symptom:** Big plume of smoke from the rear wheel/caliper area after full-throttle no-load runs on the bench. Nothing felt hot afterwards and there were no scuff marks.
+
+**Photo:** `../logbook/session/media/26-11-21/57-bench-run-2-smoke.mov`, `59-bench-run-2-smoke-frames.jpg`, `60-rotor-cable-clearance.jpg`
+
+**Root cause:** Heavy grease on the rotor bolts, flung onto the rotor and pads at high RPM, burning off when I braked the spinning wheel. Confirmed by a third run with no braking = no smoke. Brown streaky braking track supports it. Ruled out on the way: motor cable rubbing (tied clear, no scuffs), strap/tyre rub.
+
+**Fix:** Replace pads (metal/sintered), degrease rotor + bolts, check caliper/hose for leaks, blue Loctite (not grease) on rotor bolts, bed in.
+
+**Retest result:** PENDING
+
+**Lesson:** Isolate one variable per run. Spectrograms of phone audio helped separate a mechanical rub from normal motor whine.
+
+---
+
+## FL-005 - 21/11/2026 - Rear caliper flexing 1-2 mm
+
+**Phase:** 3
+
+**Symptom:** Caliper moved 1-2 mm under hard thumb pressure.
+
+**Photo:** `../logbook/session/media/26-11-21/01-rear-caliper-on-10mm-standoffs.jpg`, `75-caliper-adapter-standoffs-side.jpg`
+
+**Root cause:** One mount bolt wasn't fully tight, and the bolts only thread into the Shimano adapter (no nut, short engagement) so they can't hold real preload. Two separate standoffs rock when the clamp load is low.
+
+**Fix:** Tightened the loose bolt + washers (much less play). Next: proper 10.9 bolts with enough thread engagement or nyloc nuts, Loctite, torque wrench. If it still flexes, a one-piece milled bracket.
+
+**Retest result:** Partially fixed - play much reduced, possible light catch under heavy braking. Marker witness test pending.
+
+**Lesson:** Preload, not spacer geometry, was the main problem. Check every bolt in a load path before redesigning parts.
+
+---
+
+## FL-006 - 21/11/2026 - Rotor running ~1 mm from mount hardware
+
+**Phase:** 3
+
+**Symptom:** A mount bolt tip and the caliper mounting boss sit ~1 mm from the rotor - catches when the mount flexes under braking.
+
+**Photo:** `../logbook/session/media/26-11-21/67-screw-to-rotor-gap-closeup.jpg`, `74-rotor-over-caliper-boss.jpg`
+
+**Root cause:** Through-bolts with tips pointing at the rotor, and the caliper/adapter geometry placing the boss right at the rotor edge. Older photos show it was always this close.
+
+**Fix:** Don't file the boss (it holds the caliper thread). Check rotor centring and adapter/rotor size match. New bracket with blind tapped holes and ≥3 mm clearance.
+
+**Retest result:** PENDING
+
+**Lesson:** Design clearance in, don't rely on parts "not quite touching" when static.
+
+---
+
+## FL-007 - 21/11/2026 - Runaway throttle
+
+**Phase:** 3
+
+**Symptom:** After a run the motor kept driving at ~half throttle with the throttle released. Only the key stopped it.
+
+**Root cause:** Under investigation. Suspect 1: Fardriver Cruise Function engaged after a steady hold - normally cancelled by the brake, but my brake cut-offs aren't wired. Suspect 2: throttle signal fault (lost ground or signal shorted towards 5 V) in the adapter wiring.
+
+**Fix:** Cruise OFF. Measure throttle signal at idle (~0.8-1.0 V expected). Wire brake cut-off switches. Fit a handlebar kill switch.
+
+**Retest result:** PENDING - no running until resolved.
+
+**Lesson:** Brake cut-offs and a kill switch should go in before the first powered test, not after.
+
+---
+
+## FL-008 - 21/11/2026 - Persistent hum with the wheel stopped
+
+**Phase:** 3
+
+**Symptom:** Motor/controller hummed for the whole 13 s clip with the wheel stationary (previously only a couple of seconds).
+
+**Photo:** `../logbook/session/media/26-11-21/65-stationary-hum-spectrogram.png`
+
+**Root cause:** Spectrogram shows steady switching tones, so the controller is still driving current into a stalled motor. Likely the same cause as FL-007, or a hold/regen setting (Energy feedback was on 0-follow).
+
+**Fix:** Check throttle V + phase current in the Graph tab while it hums. Try Cruise/P off and regen 1 (none).
+
+**Retest result:** PENDING
+
+**Lesson:** "Normal noises" need data before they're dismissed.
+
+---
+
+## FL-009 - 21/11/2026 - Thin-wire butt crimps pulling out
+
+**Phase:** 3
+
+**Symptom:** Five red butt crimps on thin signal wire pulled straight out.
+
+**Photo:** `../logbook/session/media/26-11-21/48-failed-butt-crimps.jpg`
+
+**Root cause:** Wire thinner than the terminal's range - under-filled barrel, nothing to grip. Stamped crimpers make it worse.
+
+**Fix:** Fold strands back to bulk the wire before crimping. Buy a ratchet crimper.
+
+**Retest result:** Holding under a firm pull. To redo/reinforce before road use.
+
+**Lesson:** Match wire gauge to terminal size.
+
+---
+
+## FL-010 - 21/11/2026 - DC-DC converter misdiagnosed as shorted
+
+**Phase:** 3
+
+**Symptom:** Input-to-output read "0" - looked like a shorted switching transistor.
+
+**Photo:** `../logbook/session/media/26-11-21/35-dc-dc-resistance-test.jpg`
+
+**Root cause:** Measurement error - meter was on the MΩ range and solder-tipped leads gave poor contact. Real reading ~8-18 MΩ, different each way (diode behaviour) = healthy.
+
+**Fix:** Scrape tips clean, read the units on the display, confirm with diode mode, then a fused no-load power test (expect 12-14 V).
+
+**Retest result:** Resistance check passed. Powered test PENDING.
+
+**Lesson:** Check the units and probe contact before condemning a part.
+
+---
