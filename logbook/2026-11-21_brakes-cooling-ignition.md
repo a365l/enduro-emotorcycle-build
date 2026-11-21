@@ -31,7 +31,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 23. **Persistent stationary hum:** the post-throttle buzz now lasted the whole 13 s clip with the wheel stopped. The audio shows steady switching tones, so the controller is still driving current, not a mechanical noise. Likely linked to step 22 (a throttle signal not returning to idle, or cruise/hold/EABS). Next: watch throttle voltage + phase current in the Graph tab while it hums. (64–65)
 24. **Mount screw / rotor clearance:** a loose mount screw was found and tightened, which greatly reduced the caliper play, so the loose bolt was a big part of the original 1–2 mm flex. Under heavy braking the stack still flexes enough for the screw tip (~1 mm from the rotor) to catch it. Design rule for the new bracket: **blind tapped holes, so no bolt protrudes on the rotor side**, with ≥3 mm rotor clearance. (66–69)
 25. **Weak bolt grip:** the mount screws came out very easily despite being tightened hard, which points to short thread engagement and/or worn or stripped threads in a thin plate, plus no threadlocker. Actions: check engagement, re-tap or Helicoil any stripped holes (or through-bolt with nyloc nuts), and use blue Loctite at a measured torque.
-26. **Washers fitted (dad's suggestion):** the caliper play is much reduced. The rotor edge now looks almost in contact with the adapter / lower caliper bolt area. To confirm: paper/drill-bit gap gauge plus marker witness test, and check whether the washers shifted the stack toward the rotor.
+26. **Washers fitted (dad's suggestion):** the caliper play is much reduced. The rotor edge now looks almost in contact with the adapter / lower caliper bolt area. To confirm: paper/drill-bit gap gauge plus marker witness test, and check whether the washers shifted the stack toward the rotor. Past photos confirm the rotor was always this close to the caliper mounting boss (74). The boss holds the caliper thread, so filing is ruled out. After tightening, it runs fine, with a possible light catch only under heavy braking. Next: rotor centring check, adapter/rotor size check, marker witness test. New bracket to design in ≥3 mm clearance.
 
 ## Progress
 
@@ -165,6 +165,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 71 | ![Measuring 2](./2026-11-21-photos/71-measuring-mount-offset-2.jpg) Second offset measurement |
 | 72 | ![Underside](./2026-11-21-photos/72-mount-stack-underside-view.jpg) Underside view of the mount stack: two silver standoffs on the grey plate under the caliper, with a third bolt between them pointing up toward the rotor/caliper |
 | 73 | ![Rotor near adapter](./2026-11-21-photos/73-rotor-near-adapter-after-washers.jpg) After fitting washers (dad's fix): play much reduced, but the rotor edge appears almost touching the adapter/caliper bolt area. Check the gap with a paper or drill-bit gauge |
+| 74 | ![Rotor over boss](./2026-11-21-photos/74-rotor-over-caliper-boss.jpg) Rotor edge passing over the caliper mounting boss (threaded, so must NOT be filed) |
 
 ## Next session plan
 
