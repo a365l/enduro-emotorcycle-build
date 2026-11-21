@@ -166,6 +166,8 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 72 | ![Underside](./2026-11-21-photos/72-mount-stack-underside-view.jpg) Underside view of the mount stack: two silver standoffs on the grey plate under the caliper, with a third bolt between them pointing up toward the rotor/caliper |
 | 73 | ![Rotor near adapter](./2026-11-21-photos/73-rotor-near-adapter-after-washers.jpg) After fitting washers (dad's fix): play much reduced, but the rotor edge appears almost touching the adapter/caliper bolt area. Check the gap with a paper or drill-bit gauge |
 | 74 | ![Rotor over boss](./2026-11-21-photos/74-rotor-over-caliper-boss.jpg) Rotor edge passing over the caliper mounting boss (threaded, so must NOT be filed) |
+| 75 | ![Stack side](./2026-11-21-photos/75-caliper-adapter-standoffs-side.jpg) Caliper, Shimano adapter, 10 mm standoffs and plate: side view |
+| 76 | ![Stack front](./2026-11-21-photos/76-caliper-adapter-standoffs-front.jpg) Same stack, front view |
 
 ## Next session plan
 
