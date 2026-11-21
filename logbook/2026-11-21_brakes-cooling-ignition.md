@@ -22,7 +22,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 14. **Workshop:** checked the garage roof trusses for strapping the bike up: use a bottom chord near a nail plate, never the diagonal bracing. (49)
 15. **Terminal cover:** with two leads on B+, the controller cover wouldn't seat. Notched the B+ slot and smoothed the edges, and it now sits flat with the leads loose in the slot. Never force a lid onto live cables. (50–51)
 16. **Rear lift:** set up a ratchet strap from a roof truss to lift the rear wheel for bench testing. Learned the anti-jam method: pull the slack through by hand first, keep to 1½–2 wraps on the spindle, and release fully flat. (52–54)
-17. **First powered bench run:** rear lifted on the strap; Fardriver auto-learn completed fine. A rub was audible. On a full-throttle no-load run, a large plume of smoke came from the caliper/rear wheel area. Stopped testing. Suspects: rotor cutting into the already-chafed hall/phase cable, or pads dragging on the rotor (caliper on flexy standoffs). Investigation pending: see the failure log.
+17. **First powered bench run:** rear lifted on the strap; Fardriver auto-learn completed fine. A rub was audible. On a full-throttle no-load run, a large plume of smoke came from the caliper/rear wheel area. Stopped testing. Suspects: rotor cutting into the already-chafed hall/phase cable, or pads dragging on the rotor (caliper on flexy standoffs). Investigation pending. Nothing was hot afterwards, which points to brief friction (strap or tyre rub) rather than pad drag. Also found a caliper-mount screw pointing at the rotor with under 1 mm static clearance: a likely contact point once the rotor and the flexy caliper move at speed.
 
 ## Progress
 
