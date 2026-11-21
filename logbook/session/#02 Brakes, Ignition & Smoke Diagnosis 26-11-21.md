@@ -1,5 +1,5 @@
-# Session 01 - 21/11/26 - Brakes, Ignition & Smoke Diagnosis
-- Phase 3. First proper session in the new garage after the house move. Long one - roughly 14:00 to 19:40.
+# Session 02 - 21/11/26 - Brakes, Ignition & Smoke Diagnosis
+- Phase 3. First logged session (see #01 for the unlogged work before this). First proper session in the new garage after the house move. Long one - roughly 14:00 to 19:40.
 
 ## What I did
 - Checked the rear caliper - it flexed 1-2 mm by hand. Mounted on two separate 10 mm standoffs.
