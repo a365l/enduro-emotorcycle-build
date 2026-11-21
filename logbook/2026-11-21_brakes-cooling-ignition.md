@@ -21,7 +21,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 13. **Switch pod:** headlight / indicators / horn pod to map with continuity. Indicators need a flasher relay, and the bar should go through a relay. (33)
 14. **Workshop:** checked the garage roof trusses for strapping the bike up: use a bottom chord near a nail plate, never the diagonal bracing. (49)
 15. **Terminal cover:** with two leads on B+, the controller cover wouldn't seat. Notched the B+ slot and smoothed the edges, and it now sits flat with the leads loose in the slot. Never force a lid onto live cables. (50–51)
-16. **Rear lift:** set up a ratchet strap from a roof truss to lift the rear wheel for bench testing. Learned the anti-jam method: pull the slack through by hand first, keep to 1½–2 wraps on the spindle, and release fully flat. (52)
+16. **Rear lift:** set up a ratchet strap from a roof truss to lift the rear wheel for bench testing. Learned the anti-jam method: pull the slack through by hand first, keep to 1½–2 wraps on the spindle, and release fully flat. (52–54)
 
 ## Progress
 
@@ -134,6 +134,8 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 50 | ![Cover](./2026-11-21-photos/50-controller-cover-two-b-plus-leads.jpg) Terminal cover won't seat with two B+ leads in one slot |
 | 51 | ![Cover notched](./2026-11-21-photos/51-cover-notched-fits.jpg) B+ slot notched: cover now sits flat with both leads loose in the slot |
 | 52 | ![Ratchet strap](./2026-11-21-photos/52-ratchet-strap-setup.jpg) Ratchet strap setup for lifting the rear off the ground |
+| 53 | ![Strap threaded](./2026-11-21-photos/53-ratchet-strap-threaded.jpg) Strap threaded through the ratchet spindle |
+| 54 | ![Strap hanging](./2026-11-21-photos/54-ratchet-strap-hanging.jpg) Strap hung from the truss, ready to lift the rear |
 
 ## Next session plan
 
