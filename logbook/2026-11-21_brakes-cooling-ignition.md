@@ -105,6 +105,8 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 40 | ![Light bar end cap screws](./2026-11-21-photos/40-light-bar-end-cap-screws.jpg) Light bar end cap screws |
 | 41 | ![Temu order thumbnail](./2026-11-21-photos/41-light-bar-temu-order-thumbnail.jpg) Temu order thumbnail |
 | 42 | ![B+ lug stack in the frame](./2026-11-21-photos/42-b-plus-lug-stack-in-frame.jpg) B+ lug stack in the frame |
+| 43 | ![Headlight connector](./2026-11-21-photos/43-headlight-3-wire-connector.jpg) Headlight 3-wire connector (red/black/green) |
+| 44 | ![Key feed connector](./2026-11-21-photos/44-key-orange-to-feed-jst-connector.jpg) Key orange crimped to the blue feed with a single-pin JST-SM connector |
 
 ## Next session plan
 
