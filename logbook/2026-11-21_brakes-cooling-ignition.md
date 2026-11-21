@@ -29,6 +29,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 21. **Root cause confirmed:** smoke happens **only when braking**, never under power. Diagnosis: contaminated pads (grease from the rotor bolts, possibly mineral oil from the bleed) burning off when braking a fast-spinning wheel. Fix: degrease the rotor, replace the pads, check the caliper/hose for leaks, bed in the new pads, and threadlock (not grease) the rotor bolts.
 22. **⚠️ Runaway throttle:** after a run, the motor kept driving at about half throttle with the throttle released, and only stopped when the key was turned off. Suspect #1: Fardriver **Cruise function** enabled (it engages after a steady hold and cancels only via the brake input, and the brake cut-off switches aren't wired). Suspect #2: a throttle signal fault (lost ground, or the signal shorted toward 5V). Actions: disable cruise, wire the brake cut-offs, measure the throttle signal at idle, fit a kill switch. No running until resolved.
 23. **Persistent stationary hum:** the post-throttle buzz now lasted the whole 13 s clip with the wheel stopped. The audio shows steady switching tones, so the controller is still driving current, not a mechanical noise. Likely linked to step 22 (a throttle signal not returning to idle, or cruise/hold/EABS). Next: watch throttle voltage + phase current in the Graph tab while it hums. (64–65)
+24. **Mount screw / rotor clearance:** a loose mount screw was found and tightened, which greatly reduced the caliper play, so the loose bolt was a big part of the original 1–2 mm flex. Under heavy braking the stack still flexes enough for the screw tip (~1 mm from the rotor) to catch it. Design rule for the new bracket: **blind tapped holes, so no bolt protrudes on the rotor side**, with ≥3 mm rotor clearance. (66–69)
 
 ## Progress
 
@@ -154,6 +155,10 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 63 | ![EABS options](./2026-11-21-photos/63-fardriver-energy-feedback-options.png) Fardriver Energy feedback (regen) options: 0-follow, 1-none, 2–4 brake-triggered EABS, 5–7 throttle-release EABS |
 | 64 | [Video](./2026-11-21-photos/64-stationary-hum.mov) Persistent hum with the wheel stationary (13 s) |
 | 65 | ![Spectrogram](./2026-11-21-photos/65-stationary-hum-spectrogram.png) Spectrogram: constant tonal lines (~4, 7.3, 10 kHz) plus a 200–800 Hz hum throughout, with the wheel stopped, so the controller is still driving current into a stalled motor |
+| 66 | ![Stack](./2026-11-21-photos/66-caliper-stack-rotor-side.jpg) Caliper mount stack from the rotor side |
+| 67 | ![Gap](./2026-11-21-photos/67-screw-to-rotor-gap-closeup.jpg) Mount screw within ~1 mm of the rotor |
+| 68 | ![Rotor edge](./2026-11-21-photos/68-rotor-edge-near-mount.jpg) Rotor edge passing close to the mount hardware |
+| 69 | ![Bolts](./2026-11-21-photos/69-mount-bolts-axle-rotor.jpg) Mount bolts, axle nut and torque washer next to the rotor |
 
 ## Next session plan
 
