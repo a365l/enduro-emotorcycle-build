@@ -38,7 +38,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 - **Controller heatsink facing the battery:** it heats the pack. Flip it to face the frame or move it outside the box.
 - **No fuses on hand:** the ignition feed must be fused before riding
 - **Charger blade fuse** is probably 32 V rated on a 72 V system
-- **Thin-wire crimps slipping:** the wire is too thin for red terminals. Fold the strands back to bulk them up. Longer term, get a ratchet crimper.
+- **Thin-wire crimps slipping (5 failed butt crimps, photo 48):** the wire is too thin for red terminals. Fold the strands back to bulk them up. Longer term, get a ratchet crimper.
 - **DC-DC misread:** the meter was on the MΩ range, so "8"/"18" were megaohms (healthy), not ohms. Check the units on the display.
 
 ## Measurements / data taken
@@ -110,6 +110,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 45 | ![Key circuit wired](./2026-11-21-photos/45-key-circuit-wired-jst-chain.jpg) Key circuit wired: B+ feed → JST → key → Fardriver ignition |
 | 46 | ![JST adaptor](./2026-11-21-photos/46-jst-adaptor-lead.jpg) Home-made JST-SM adaptor lead for the accessory feed |
 | 47 | ![Feed routed](./2026-11-21-photos/47-key-ignition-feed-routed.jpg) Key/ignition feed routed down the frame to the Fardriver harness |
+| 48 | ![Failed crimps](./2026-11-21-photos/48-failed-butt-crimps.jpg) 5 failed red butt crimps on thin wire, before switching to folded strands |
 
 ## Next session plan
 
