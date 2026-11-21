@@ -107,6 +107,7 @@ Workshop session after the house move. Checked brake caliper rigidity, widened a
 | 42 | ![B+ lug stack in the frame](./2026-11-21-photos/42-b-plus-lug-stack-in-frame.jpg) B+ lug stack in the frame |
 | 43 | ![Headlight connector](./2026-11-21-photos/43-headlight-3-wire-connector.jpg) Headlight 3-wire connector (red/black/green) |
 | 44 | ![Key feed connector](./2026-11-21-photos/44-key-orange-to-feed-jst-connector.jpg) Key orange crimped to the blue feed with a single-pin JST-SM connector |
+| 45 | ![Key circuit wired](./2026-11-21-photos/45-key-circuit-wired-jst-chain.jpg) Key circuit wired: B+ feed → JST → key → Fardriver ignition |
 
 ## Next session plan
 
