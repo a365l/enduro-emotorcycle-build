@@ -111,9 +111,9 @@ _Running record: symptom → root cause → fix → retest. Add entries as issue
 
 **Photo:** `../logbook/session/media/26-11-21/67-screw-to-rotor-gap-closeup.jpg`, `74-rotor-over-caliper-boss.jpg`
 
-**Root cause:** Through-bolts with tips pointing at the rotor, and the caliper/adapter geometry placing the boss right at the rotor edge. Older photos show it was always this close.
+**Root cause:** Hypothesis (strong): the motor swap. The same rotor, adapter and caliper had plenty of clearance on the old hub motor. The QS205 hub is bigger and puts the rotor in a different position, so the old caliper geometry no longer fits (the 10 mm standoffs were a workaround for that). Plus through-bolts with tips pointing at the rotor. Evidence needed: rotor diameter, adapter code, hub shell diameter at the caliper, dropout-face-to-rotor-face distance, and where exactly the zero clearance is (rotor↔adapter or caliper↔hub).
 
-**Fix:** Don't file the boss (it holds the caliper thread). Check rotor centring and adapter/rotor size match. New bracket with blind tapped holes and ≥3 mm clearance.
+**Fix:** Needs a custom solution for the QS205. Options: (1) a larger rotor + matching adapter to move the caliper radially outward away from the bigger hub (also improves braking capacity); (2) a QS205-specific brake bracket if one exists; (3) a custom axle-referenced caliper hanger designed around measured QS205 geometry, ≥3 mm clearance, blind tapped holes. Don't file the boss.
 
 **Retest result:** PENDING
 
