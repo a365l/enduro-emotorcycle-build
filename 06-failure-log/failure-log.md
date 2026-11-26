@@ -113,6 +113,8 @@ _Running record: symptom → root cause → fix → retest. Add entries as issue
 
 **Root cause:** Hypothesis (strong): the motor swap. The same rotor, adapter and caliper had plenty of clearance on the old hub motor. The QS205 hub is bigger and puts the rotor in a different position, so the old caliper geometry no longer fits (the 10 mm standoffs were a workaround for that). Plus through-bolts with tips pointing at the rotor. Evidence needed: rotor diameter, adapter code, hub shell diameter at the caliper, dropout-face-to-rotor-face distance, and where exactly the zero clearance is (rotor↔adapter or caliper↔hub).
 
+**Clarified 26/11/26:** the problem is **side (axial) clearance**. The rotor-facing side of the Shimano adapter's lower block sits ~0.5-1 mm from the rotor face, in line with the rotor's cut-outs (photos 66, 74). A bigger rotor only moves the caliper outward and would not fix this. Risk: if the rotor or mount deflects, the adapter could catch a cut-out and lock the wheel.
+
 **Fix:** Needs a custom solution for the QS205. Options: (1) a larger rotor + matching adapter to move the caliper radially outward away from the bigger hub (also improves braking capacity); (2) a QS205-specific brake bracket if one exists; (3) a custom axle-referenced caliper hanger designed around measured QS205 geometry, ≥3 mm clearance, blind tapped holes. Don't file the boss.
 
 **Retest result:** PENDING
