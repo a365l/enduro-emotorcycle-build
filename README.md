@@ -42,6 +42,7 @@ Each phase README is fully photo-documented - the build story, the wiring, the f
 | [`07-firmware-config/`](./07-firmware-config/) | Fardriver parameter documentation |
 | [`wiring-key.md`](./wiring-key.md) | Wiring key: every circuit, wire colour, label code and fuse |
 | [`logbook/`](./logbook/) | Session-by-session build log with photos |
+| [`08-final-report/interview-angles.md`](./08-final-report/interview-angles.md) | Real engineering problems from the build, written up as interview stories |
 
 ## Three lessons that cost the most
 
